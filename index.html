@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ДЦЕТА | нескучный IT консалтинг</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.18.1/vis.min.js"></script>
+
+    <link href="../../dist/vis.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+        #mynetwork {
+            width: 100%;
+            height: 600px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">ДЦЕТА</a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Видим <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Умеем</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Знаем</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Сделали</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Делимся
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Отвечаем</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">Данные и бизнес</h1>
+            <p class="lead">Консалтинговые услуги по автоматизации и оптимизации бизнес-процессов,<br>
+                Построении систем аналитики и платформ данных, аналитических платформ<br>
+                Решений в области бизнес-аналитики, управления данными и информацией
+            </p>
+            <hr class="my-4">
+            <p>Нам больше не нужны сложные неповоротливые системы, которыми сложно управлять</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </p>
+        </div>
+
+    </div>
+    <div class="container">
+
+
+        <section class="placeholders text-center">
+            <h2>Наше видение</h2>
+            <h5>Как все должно быть</h5>
+        </section>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="http://s2.dmcdn.net/J6nWX/x180-uGw.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Разнообразие</h4>
+                        <p class="card-text">Мы хотим обеспечить максимальное разнообразие в выборе технологий. В мире, где каждый бизнес обладает уникальными особенностями, глупо полагать, что все задачи можно решить в рамках одной устоявшейся системы или набора технологий</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="http://s2.dmcdn.net/J6nWX/x180-uGw.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">гибкость в разработке</h4>
+                        <p class="card-text">максимальная скорость доставки готового решения – мы не хотим годами проектировать решения, мы хотим как можно быстрее их доставлять.
+                            Пока другие собирают требования мы празднуем выход новой версии.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="http://s2.dmcdn.net/J6nWX/x180-uGw.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="placeholders text-center">
+            <h2>Что мы умеем</h2>
+            <h5>И зачем вам об этом знать</h5>
+        </section>
+        <div class="container">
+            <ul>
+                <li>Интеграция данных</li>
+                <li>Системы очистки и валидации данных</li>
+                <li>Моделирование данных</li>
+                <li>Проектирование баз и хранилищ данных</li>
+                <li>Разработка решений для внесения данных</li>
+                <li>Системы контроля качества данных</li>
+                <li>Разработка системы управленческой отчетности</li>
+                <li>Построение BI-систем</li>
+                <li>Построение систем предиктивной аналитики (если все слишком уж круто)</li>
+                <li>Автоматизация бизнес-процессов</li>
+                <li>Оптимизация бизнес-процессов (хотя нет, это не на нашей совести)</li>
+                <li>Разработка интегрированных платформ данных</li>
+                <li>Интерактивная визуализация данных</li>
+            </ul>
+        </div>
+        <section class="text-center">
+            <h2 class="jumbotron-heading">Что мы знаем</h2>
+            <h5>И как это может помочь</h5>
+
+        </section>
+        <section>
+            <div id="mynetwork" class="container-fluid"></div>
+        </section>
+
+    </div>
+    <div class="container">
+        <footer>
+            <p class="float-right"><a href="#">Back to top</a></p>
+            <p>© 2017 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
+    </div>
+
+
+    <script type="text/javascript">
+        // create an array with nodes
+        var nodes = new vis.DataSet([
+            {id: 1, label: 'Elastic Stack'},
+            {id: 2, label: 'MongoDB'},
+            {id: 3, label: 'Redis'},
+            {id: 4, label: 'PostgreSQL'},
+            {id: 5, label: 'MS SQL Server'},
+            {id: 6, label: '.NET'},
+            {id: 7, label: 'R'},
+            {id: 8, label: 'Python'},
+            {id: 9, label: 'Django'},
+            {id: 10, label: 'D3.js'},
+            {id: 11, label: 'Crossfilter.js'},
+            {id: 12, label: 'dc.js'},
+            {id: 13, label: 'R Shiny'},
+            {id: 14, label: 'Tableu'},
+            {id: 15, label: 'Qlikview'},
+            {id: 16, label: 'pandas'},
+            {id: 17, label: 'Node.js'},
+
+            {id: 20, label: 'Данные'},
+
+            {id: 23, label: 'Анализ'},
+
+            {id: 24, label: 'Разработка'},
+            
+            {id: 25, label: 'Визуализация'},
+
+            {id: 21, label: 'SQL'},
+            {id: 22, label: 'NoSQL'}
+
+
+
+        ]);
+
+        // create an array with edges
+        var edges = new vis.DataSet([
+
+//
+//            {from: 20, to: 23},
+//            {from: 23, to: 25},
+//            {from: 25, to: 24},
+//            {from: 24, to: 20},
+
+
+            {from: 8, to: 9},
+            {from: 8, to: 16},
+
+            {from: 20, to: 21},
+            {from: 20, to: 22},
+            {from: 22, to: 1},
+            {from: 22, to: 2},
+            {from: 22, to: 3},
+
+            {from: 21, to: 5},
+            {from: 7, to: 13},
+
+            {from: 25, to: 13},
+            {from: 25, to: 14},
+            {from: 25, to: 15},
+            {from: 25, to: 10},
+            {from: 25, to: 11},
+            {from: 25, to: 12},
+            
+            {from: 23, to: 7},
+            {from: 23, to: 16},
+            {from: 23, to: 14},
+            {from: 23, to: 15},
+
+            {from: 24, to: 6},
+            {from: 24, to: 8},
+            {from: 24, to: 17},
+
+            
+            
+            
+            
+            
+            {from: 21, to: 4}
+
+        ]);
+
+        // create a network
+        var container = document.getElementById('mynetwork');
+
+        // provide the data in the vis format
+        var data = {
+            nodes: nodes,
+            edges: edges
+        };
+        var options = {
+            interaction:{
+                dragNodes:true,
+                dragView: false,
+                hideEdgesOnDrag: false,
+                hideNodesOnDrag: false,
+                hover: false,
+                hoverConnectedEdges: true,
+                keyboard: {
+                    enabled: false,
+                    speed: {x: 10, y: 10, zoom: 0.02},
+                    bindToWindow: true
+                },
+                multiselect: false,
+                navigationButtons: false,
+                selectable: true,
+                selectConnectedEdges: true,
+                tooltipDelay: 300,
+                zoomView: false
+            }
+
+        };
+
+        // initialize your network!
+        var network = new vis.Network(container, data, options);
+
+        (function(){
+            console.log(network.getSeed());
+        })();
+
+    </script>
+
+</body>
+</html>
